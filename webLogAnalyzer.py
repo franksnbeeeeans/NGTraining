@@ -1,5 +1,7 @@
 from collections import Counter
-LOGFILE = 'web-logs.txt'
+# File path hardcoded for now.  Can be changed later to add an argparse statement for file input or:
+# LOGFILE = input("What is the path to your log file?\n")
+LOGFILE = 'web-log.txt'
 
 # Create variable to hold the data as a list
 data = []
