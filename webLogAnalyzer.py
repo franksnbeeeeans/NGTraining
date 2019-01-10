@@ -28,10 +28,13 @@ def process_all_data():
 
 def process_individual_data(category_data, plural_name):
     common_data = Counter(category_data).most_common(10)
-    print(f"Top Ten {plural_name}\nCount\t\t{plural_name}")
+    print("Top Ten {}\nCount\t\t{}".format(plural_name,plural_name))
+    # On the latest Python version 3.6+, you can use the following syntax:
+    # print(f"Top Ten {plural_name}\nCount\t\t{plural_name}")
     for ip in common_data:
-        print(f'{ip[1]:<10}\t{ip[0]}')
-
+        print("{}\t{}".format(ip[1]:<10,ip[0]})
+        # print(f'{ip[1]:<10}\t{ip[0]}')
+        
     print('\n\n')
 
 
